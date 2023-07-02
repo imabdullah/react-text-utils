@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import { TextForm } from './components/TextForm';
 import React, { useState } from 'react'
 import { Alter } from './components/Alter';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { About } from './components/About';
 function App() {
 
   const bgColors = [
@@ -71,17 +73,28 @@ function App() {
   }
   return (
     <>
-      <Navbar mode={mode} toogleMode={toogleMode} bgColors={bgColors} />
+      <BrowserRouter>
+        <Navbar mode={mode} toogleMode={toogleMode} bgColors={bgColors} />
 
-      <div className="container mt-4">
         {/* <Alter alert={alert} /> */}
-        <TextForm
-          mode={mode}
-          title="Simply enter your text and choose the case you want to convert it to."
-          label="Type your text"
-          showAlert={showAlert}
-        />
-      </div>
+        <div className="container mt-4">
+
+          <Routes>
+            <Route exact path="/about" element={<About />}></Route>
+            <Route exact path="/" element={
+              <TextForm
+                mode={mode}
+                title="Simply enter your text and choose the case you want to convert it to."
+                label="Type your text"
+                showAlert={showAlert}
+              />
+            }></Route>
+          </Routes>
+
+
+
+        </div>
+      </BrowserRouter>
     </>
   );
 }
