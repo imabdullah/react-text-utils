@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/imabdullah/react-text-utils/static/css/main.e6c13ad2.css",
+    "main.js": "/imabdullah/react-text-utils/static/js/main.4c1b580b.js",
+    "static/js/787.fb9c46f3.chunk.js": "/imabdullah/react-text-utils/static/js/787.fb9c46f3.chunk.js",
+    "index.html": "/imabdullah/react-text-utils/index.html",
+    "main.e6c13ad2.css.map": "/imabdullah/react-text-utils/static/css/main.e6c13ad2.css.map",
+    "main.4c1b580b.js.map": "/imabdullah/react-text-utils/static/js/main.4c1b580b.js.map",
+    "787.fb9c46f3.chunk.js.map": "/imabdullah/react-text-utils/static/js/787.fb9c46f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4c1b580b.js"
+  ]
+}
