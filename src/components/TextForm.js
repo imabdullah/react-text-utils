@@ -73,7 +73,7 @@ export const TextForm = (props) => {
 
     return (
         <>
-            <div className="container" style={{ color: props.mode == 'light' ? 'black' : 'white' }}>
+            <div className="container" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
                 <h4>{props.title}</h4>
                 <button className="btn btn-secondary mt-2" onClick={copythis}> Copy to Clipboard</button>
                 <button className="btn btn-secondary mt-2  mx-2" onClick={speakIt}>{!speakToogle ? 'Speak it' : 'Stop Speaking'}</button>
@@ -85,7 +85,7 @@ export const TextForm = (props) => {
                         id="floatingTextarea2"
                         style={{
                             border: "1px solid",
-                            color: props.mode == 'light' ? 'black' : 'white',
+                            color: props.mode === 'light' ? 'black' : 'white',
                             height: "200px"
                         }}
                     ></textarea>
@@ -103,7 +103,7 @@ export const TextForm = (props) => {
                 <div className="mt-4">
                     <h4>Text Summary</h4>
                     <p>
-                        {text.split(" ").length} words and {text.length} characters
+                        {text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} words and {text.length} characters
                     </p>
                 </div>
 

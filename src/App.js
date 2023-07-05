@@ -76,7 +76,7 @@ function App() {
       <BrowserRouter>
         <Navbar mode={mode} toogleMode={toogleMode} bgColors={bgColors} />
 
-        {/* <Alter alert={alert} /> */}
+        <Alter alert={alert} />
         <div className="container mt-4">
 
           <Routes>
